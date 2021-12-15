@@ -1,0 +1,111 @@
+* {
+    padding: 0%;
+    box-sizing: border-box;
+    margin: 0%;
+}
+
+#wrapper {
+    background-color: #000000;
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    background-color: #000055;
+    height: 15vh;
+    width: 100%;
+    display: grid;
+    grid-template-rows: minmax(50px, auto);
+    grid-template-columns: minmax(170px, 1.7fr), minmax(50px, 0.5fr), minmax(50px, 0.5fr), minmax(25px, 0.25fr);    
+    grid-template-areas: 
+    "we me na lo"
+    ;
+}
+
+#welcome {
+    grid-area: we;    
+    width: 70%;
+    border-radius: 5px;
+}
+
+#menu {
+    grid-area: me;
+    width: 50%;
+    border-radius: 5px;
+}
+
+#nav {
+    grid-area: na;
+    width: 50%;
+    border-radius: 5px;
+}
+
+#logo {
+    grid-area: lo;
+    width: 50%;
+    border-radius: 5px;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    margin: 20px;
+    background-color: #9E34E4;
+    font-size: 2rem;
+    font-family: rigatoni-bold, sans-serif;
+    font-weight: 400;
+}
+
+#smallwrapper {
+    height: 160vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "img img img im2 im2 ."
+    "img img img txt txt txt"
+    "img img img txt txt txt"
+    "img img img txt txt txt"
+    ". . . . . ."
+    ". . . . . ."
+    ;
+}
+
+#maintext {
+    grid-area: txt;
+}
+#pizzaimg {
+    grid-area: img;
+}
+
+#img2 {
+    grid-area: im2;
+}
+
+h1 {
+    font-size: 8rem;
+    width: 40%;
+    color: white;
+}
+ 
+p {
+    width: 5%;
+    font-size: 2.5rem;
+    color: whitesmoke;
+}
+
+
+footer {
+    background-color: #000055;
+    width: 100%;
+    height: 22vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
