@@ -100,7 +100,6 @@ p {
     color: whitesmoke;
 }
 
-
 footer {
     background-color: #000055;
     width: 100%;
@@ -108,4 +107,21 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#wrapper2 {
+    width: 100%;
+}
+
+#header2 {
+    height: 30vh;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-size: 12vw;
+    color: #9E34E4;
+    ;
 }
