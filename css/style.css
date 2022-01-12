@@ -28,25 +28,21 @@ header {
 #welcome {
     grid-area: we;    
     width: 70%;
-    border-radius: 5px;
 }
 
 #menu {
     grid-area: me;
     width: 50%;
-    border-radius: 5px;
 }
 
 #nav {
     grid-area: na;
     width: 50%;
-    border-radius: 5px;
 }
 
 #logo {
     grid-area: lo;
     width: 50%;
-    border-radius: 5px;
 }
 
 section {
@@ -78,7 +74,7 @@ a {
 
 #smallwrapper {
     height: 160vh;
-    width: 100vw;
+    width: 100bvw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
