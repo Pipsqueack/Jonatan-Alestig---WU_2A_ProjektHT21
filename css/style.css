@@ -14,7 +14,6 @@
 }
 
 header {
-    background-color: #161414;
     height: 15vh;
     width: 100%;
     display: grid;
@@ -91,14 +90,21 @@ a {
 
 img {
     filter: drop-shadow(12px 12px 30px #430070);
+    margin: 4%;
 }
 
 #pizzaimg {
     grid-area: img;
+    margin: 2%;
 }
 
 #img2 {
     grid-area: im2;
+    margin: 2%;
+}
+
+#imgmenu {
+    margin: 0.5%;
 }
 
 h1 {
@@ -129,6 +135,7 @@ footer {
     align-items: center;
     color: whitesmoke;
     font-family: 'Megrim', cursive;
+    grid-area: foo;
 }
 
 li {
@@ -139,9 +146,35 @@ li {
 
 
 #wrapper2 {
+    display: grid;
     width: 100%;
     height: 100%;
     background-color: #131313;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "hea hea"
+    "txt img"
+    "txt img"
+    "txt img"
+    "txt img"
+    "foo foo"
+    ;
+}
+
+#txt {
+    grid-area: txt;
+    display: flex;
+    flex-direction: column;
+}
+
+#imgaside  {
+    grid-area: img;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: 100%;
+    justify-content: space-between;
 }
 
 #header2 {
@@ -149,16 +182,18 @@ li {
     display: flexbox;
     justify-content: center;
     align-items: center;
+    grid-area: hea;
 }
 
 h2 {
     font-size: 12vw;
-    color: #9E34E4;
+    color: #7e20bd;
     padding: 5px;
     margin: 5px;
+    filter: drop-shadow(1px 1px 150px #bf66fa);
 }
 
-#aboutus {
+#title {
     color: white;
     font-family: 'Megrim', cursive;
     font-weight: 400;
@@ -178,9 +213,9 @@ h2 {
 }
 
 #smallwrapper2 {
-    height: 70%;
-    width: 60%;
-    background-color: #9E34E4;
+    height: 120vh;
+    width: 40vw;
+    background-color: #6e18a8;
 }
 
 p {
@@ -193,8 +228,8 @@ p {
 #brodtext {
     font-size: 1.2em;
     width: 45vw;
-    margin: 3%;
-    padding: 0%;
+    margin: 0%;
+    padding: 6%;
     font-family: 'Caudex', serif;
 }
 
