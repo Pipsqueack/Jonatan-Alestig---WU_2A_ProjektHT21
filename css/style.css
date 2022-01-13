@@ -128,8 +128,6 @@ footer {
 
 li {
     display: flex;
-
-
 }
 
 
@@ -137,7 +135,7 @@ li {
 
 #wrapper2 {
     width: 100%;
-    height: 100vh;
+    height: 170vh;
     background-color: #131313;
 }
 
@@ -155,6 +153,11 @@ h2 {
     margin: 5px;
 }
 
+#aboutus {
+    color: white;
+    font-family: 'Megrim', cursive;
+    font-weight: 400;
+}
 
 
 
@@ -180,4 +183,11 @@ p {
     font-size: 1.5em;
     padding: 0.7%;
     color: whitesmoke;
+}
+
+#brodtext {
+    width: 45vw;
+    margin: 4%;
+    padding: 2%;
+    font-family: 'Caudex', serif;
 }
