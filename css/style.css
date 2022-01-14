@@ -14,34 +14,32 @@
 }
 
 header {
-    height: 15vh;
+    height: 23vh;
     width: 100%;
     display: grid;
     grid-template-rows: minmax(50px, auto);
-    grid-template-columns: minmax(170px, 1.7fr), minmax(50px, 0.5fr), minmax(50px, 0.5fr), minmax(25px, 0.25fr);    
+    grid-template-columns: minmax(170px, auto) minmax(50px, auto) minmax(50px, auto) minmax(25px, auto);    
     grid-template-areas: 
-    "we me na lo"
+    ". me na lo"
     ;
-}
-
-#welcome {
-    grid-area: we;    
-    width: 70%;
 }
 
 #menu {
     grid-area: me;
     width: 50%;
+    height: 50%;
 }
 
 #nav {
     grid-area: na;
     width: 50%;
+    height: 50%;
 }
 
-#logo {
+.logo {
     grid-area: lo;
-    width: 50%;
+    margin: 0%;
+    padding: 0.5%;
 }
 
 section {
@@ -68,9 +66,17 @@ a {
     text-decoration: none;
 }
 
+ul {
+    grid-area: lst;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 #smallwrapper {
     height: 200vh;
-    width: 100bvw;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -79,8 +85,8 @@ a {
     "img img img txt txt txt"
     "img img img txt txt txt"
     "img img img txt txt txt"
-    ". . . . . ."
-    ". . . . . ."
+    "lst lst . . . ."
+    "lst lst . . . ."
     ;
 }
 
@@ -94,6 +100,8 @@ img {
 }
 
 #pizzaimg {
+    display: flex;
+    flex-wrap: wrap;
     grid-area: img;
     margin: 2%;
 }
@@ -101,6 +109,8 @@ img {
 #img2 {
     grid-area: im2;
     margin: 2%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #imgmenu {
@@ -108,13 +118,13 @@ img {
 }
 
 h1 {
-    font-size: 8rem;
+    font-size: 10vw;
     width: 40%;
     color: whitesmoke;
 }
 
 #undertext {
-    font-size: 2.2em;
+    font-size: 2.5vw;
     font-family: 'Caudex', serif;
 }
  
@@ -122,35 +132,32 @@ p {
     width: 5%;
     margin: 2%;
     padding: 2%;
-    font-size: 2.5rem;
+    font-size: 2.5vw;
     color: whitesmoke;
 }
 
 footer {
     background-color: #131313;
     width: 100%;
-    height: 22vh;
     display: flex;
     justify-content: center;
     align-items: center;
     color: whitesmoke;
     font-family: 'Megrim', cursive;
     grid-area: foo;
+    flex-direction: column;
 }
 
 li {
     display: flex;
 }
 
-
-
-
 #wrapper2 {
     display: grid;
     width: 100%;
-    height: 100%;
+    height: 250vh;
     background-color: #131313;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 60% 40%;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
     "hea hea"
@@ -172,14 +179,15 @@ li {
     grid-area: img;
     display: flex;
     flex-direction: column;
-    width: 95%;
-    height: 100%;
+    height: 90%;
+    align-items: center;
     justify-content: space-between;
+    margin: 10%;
 }
 
 #header2 {
-    height: 30vh;
-    display: flexbox;
+    height: 40vh;
+    display: flex;
     justify-content: center;
     align-items: center;
     grid-area: hea;
@@ -199,23 +207,14 @@ h2 {
     font-weight: 400;
 }
 
-
-
-
 #wrapper3 {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: 150vh;
+    height: 180vh;
     background-color: #131313;
-}
-
-#smallwrapper2 {
-    height: 120vh;
-    width: 40vw;
-    background-color: #6e18a8;
 }
 
 p {
@@ -225,15 +224,15 @@ p {
     color: #9E34E4;
 }
 
-#brodtext {
-    font-size: 1.2em;
+.brodtext {
+    font-size: 1.7vw;
     width: 45vw;
     margin: 0%;
     padding: 6%;
     font-family: 'Caudex', serif;
 }
 
-#underrubrik {
+.underrubrik {
     color: whitesmoke;
     font-family: 'Megrim', cursive;
     font-weight: 400;
